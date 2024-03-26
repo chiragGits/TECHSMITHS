@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Protest Strike", sans-serif;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url("HERO2.jpg"); 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+span:hover{
+    color: #f44336;
+    transition: .5s ease-in-out;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 65px;
+    text-shadow: 2px 2px black;
+}
+
+.text-box h1:hover
+{
+    font-size: 100px;
+    color: #f44336;
+    transition: 1s ;
+    transition-timing-function: ease-in-out ;
+    cursor: pointer;
+    
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 2px 2px black;
+}
+
+
+.core{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+p{
+    color: #777;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.core-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-right: 2.5rem;
+    padding: 0.8rem .48rem;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.core-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.core-col p{
+    font-size: 20px;
+}
+
+.fac{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.fac p{
+    font-size: 20px;
+}
+
+.fac-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.fac-col img{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+
+.fac-col p{
+    padding: 0;
+    font-size: 20px;
+}
+
+.fac-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+.comments{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.comments-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.comments p{
+    font-size: 20px;
+}
+.comments-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.comments-col p{
+    padding: 0;
+    font-size: 18px;
+}
+.comments-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+
+
+#footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+#footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 25px;
+}
+.cardContainer{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+
+}
+.card{
+    box-sizing: border-box;
+    padding-top: 10px;
+    background-color: #fff3f3;
+    height: 100px;
+    width: 400px;
+    margin: 10px;
+}
+
+.cardCon{
+    font-size: 15px;
+}
+
+.card a{
+    margin-left: 5px ;
+}
+
+.cardImg{
+    margin-top: -5px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardCon{
+    margin-top: -8px;
+}
+
+.cardImg .fa{
+    color: black;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
